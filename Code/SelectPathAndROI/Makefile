@@ -9,7 +9,7 @@ LFLAGS += -lgomp -lz -lpthread -lGL -lGLU -lglut -lGLEW -lpng -lembree -ltbb -lt
 CFLAGS_DEBUG = -DDEBUG -g3
 LFLAGS_DEBUG =
 
-CFLAGS_RELEASE = -O3 -DRELEASE -funroll-loops -ffast-math -NDEBUG
+CFLAGS_RELEASE = -O3 -DRELEASE -funroll-loops -ffast-math -DNDEBUG
 LFLAGS_RELEASE = -O3 
 
 SRC = ./
