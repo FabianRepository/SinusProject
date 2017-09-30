@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <vector>
+#ifdef _WIN32
 #include <PNG/png.h>
+#else
+#include <libpng/png.h>
+#endif
 
 unsigned char* PNGReadColor( const char* fileName , int& width , int& height )
 {
